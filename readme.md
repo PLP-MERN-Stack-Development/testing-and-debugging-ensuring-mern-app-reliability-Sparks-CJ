@@ -24,3 +24,8 @@ npm run test:integration
 
 # Run end-to-end tests only
 npm run test:e2e
+
+
+Testing Strategy
+
+The MERN stack application is tested using a combination of unit, integration, and end-to-end tests to ensure reliability and correct functionality. Unit tests (using Jest and React Testing Library) validate individual React components, hooks, and server utilities in isolation. Integration tests (using Jest and Supertest with an in-memory MongoDB) verify API endpoints, database operations, and authentication flows. End-to-end tests (using Cypress) simulate real user interactions to confirm critical workflows such as login, post creation, and navigation work as expected. Debugging techniques, including global error handling on the server and React Error Boundaries on the client, enhance error tracking and application stability. This strategy ensures robust, maintainable, and production-ready code.
