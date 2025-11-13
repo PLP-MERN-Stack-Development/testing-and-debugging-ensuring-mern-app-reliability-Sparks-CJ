@@ -1,0 +1,8 @@
+"scripts": {
+  "install-all": "npm install && cd client && npm install",
+  "setup-test-db": "node server/setupTestDb.js",
+  "test": "jest --coverage",
+  "test:unit": "jest --coverage --testPathPattern=client|server/utils|server/middleware",
+  "test:integration": "jest --coverage --testPathPattern=server/tests/posts.test.js",
+  "test:e2e": "cypress run"
+}
